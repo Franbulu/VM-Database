@@ -1,0 +1,47 @@
+vmware-microsoft-three-server-architecture/
+│
+├── README.md
+│
+├── /architecture/                     ← diagrams + high-level design
+│   ├── network-diagram.png
+│   ├── server-topology.png
+│   ├── vm-specs.md
+│   └── ip-plan.md
+│
+├── /vmware-config/                    ← VMware settings per VM
+│   ├── app-server-config.md
+│   ├── db-server-a-config.md
+│   ├── db-server-b-config.md
+│   └── vmnet-hostonly-setup.md
+│
+├── /windows-server-setup/             ← OS installation + roles
+│   ├── server2022-installation.md
+│   ├── roles-and-features.md
+│   └── firewall-rules.md
+│
+├── /sql-server/                       ← DB installation + schemas
+│   ├── install-sql-server.md
+│   ├── db-a-schema.sql
+│   ├── db-b-schema.sql
+│   ├── dual-db-connection-strings.md
+│   └── backups/ (placeholder)
+│
+├── /iis-dotnet-app/                   ← App server + .NET configs
+│   ├── appsettings.json (placeholder)
+│   ├── web.config
+│   ├── dual-db-workflow.md
+│   └── sample-api/
+│       ├── Program.cs
+│       ├── Controllers/
+│       └── Models/
+│
+├── /docs/                             ← full documentation
+│   ├── full-deployment-guide.md
+│   ├── troubleshooting.md
+│   └── faq.md
+│
+└── /screenshots/                      ← proof of work
+    ├── vmware-network.png
+    ├── windows-server-dashboard.png
+    ├── sql-server-management-studio.png
+    └── iis-manager.png
